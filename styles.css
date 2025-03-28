@@ -1,0 +1,228 @@
+ /*styling for h1 */
+ h1 {
+     font-weight: bold;
+     /* Makes the text bold */
+     font-size: 2.5rem;
+     /* Adjust size for <h1> */
+     margin-top: 20px;
+ }
+
+ /*styling for h3 */
+ h3 {
+     /*adjust size of h3*/
+     font-size: 1.5rem;
+     /* Adjust size for <h2> */
+     margin-top: 15px;
+ }
+
+ /*styling for h4 */
+ h4 {
+     /*centres text */
+     text-align: center;
+     /* Adds spacing below the heading */
+     margin-bottom: 16px;
+ }
+
+
+ /*styling for body */
+ body {
+     /*uses arial font */
+     font-family: Arial, sans-serif;
+     /*sets background colour */
+     background-color: hsl(202, 26%, 31%);
+     /*text colour will be white */
+     color: white;
+     margin: 0;
+     /*adds padding around page */
+     padding: 20px;
+ }
+
+ /*styling for header */
+ header {
+     background: hsl(203, 10%, 15%);
+     text-align: center;
+     font-size: 2rem;
+     color: white;
+     /*Adds padding for top/bottom of header*/
+     padding: 10px 0;
+     text-align: center;
+ }
+
+ .logo {
+     display: block;
+     /* Makes sure the logo is displayed as a block element */
+     margin: 2px auto;
+     /* Centers the logo */
+     width: auto;
+     /* Ensures the logo scales down on smaller screens */
+     max-height: 20%;
+     /* Maintains aspect ratio */
+ }
+
+ .slogan {
+     text-align: center;
+     font-size: 2rem;
+     font-weight: bold;
+     color: white;
+     margin-top: 10px;
+     /* makes text italic*/
+     font-style: italic;
+     /* Make the text all caps */
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     /* Add spacing between letters */
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+     /* Add shadow to text*/
+ }
+
+ nav ul {
+     /* removes bullet points */
+     list-style-type: none;
+     /* removes padding */
+     padding: 0;
+ }
+
+ nav ul li {
+     /* displays items in a row and adds space between them */
+     display: inline;
+     margin: 0 15px;
+ }
+
+ nav a {
+     /* sets colour of links to white and removes undrline from links */
+     color: white;
+     text-decoration: none;
+ }
+
+ nav a:hover {
+     /* underlines link when hovering over it  */
+     text-decoration: underline;
+ }
+
+ main {
+     /* adds space above and below main*/
+     margin: 20px 0;
+ }
+
+ footer {
+     text-align: center;
+     padding: 10px 0;
+     background: hsl(202, 26%, 31%);
+     color: rgb(255, 255, 255);
+     /* keeps footer postioned correctly at the bottom and spans the entire width of the page */
+     position: relative;
+     bottom: 0;
+     width: 100%;
+ }
+   /* makes images fit container and maintain aspect ratio */
+ img {
+     max-width: 100%;
+     height: auto;
+ }
+   /* styling for the embedded youtube video */
+ iframe {
+     margin: 20px 0;
+     width: 100%;
+     max-width: 800px;
+     height: 400px;
+ }
+   /* chatgpt.com  */
+ .carousel-caption {
+         /* creates semi-transparent background, adds padding inside description and rounds corners */
+     background-color: rgba(0, 0, 0, 0.849);
+     padding: 2px;
+     border-radius: 2px;
+ }
+     /* size/colour of caption h2 */
+ .carousel-caption h2 {
+     font-size: 1.5rem;
+     color: #fff;
+ }
+     /* text size and colour */
+ .carousel-caption p {
+     font-size: 1rem;
+     color: #ccc;
+ }
+     /* body text font */
+ body {
+     font-family: Arial, sans-serif;
+ }
+/*tutorial 2 week 7 AdvancedFormValidation */
+ form {
+     /* width of form, centres form, adds border and rounds corner of form */
+     width: 850px;
+     margin: 0 auto;
+     padding: 18px;
+     border: 1px solid #fafafa;
+     border-radius: 8px;
+ }
+
+ label {
+     /* makes each label a block and adds space above label */
+     display: block;
+     margin-top: 6px;
+ }
+
+  /* styling for input fields */
+ input {
+     width: 100%;
+     padding: 10px;
+     margin-top: 6px;
+ }
+ /* styling for summit button */
+ button {
+     margin-top: 10px;
+     padding: 9px 18px;
+     width: 100%;
+     background-color: hsl(203, 10%, 15%);
+     color: rgb(241, 241, 241);
+     border: none;
+     border-radius: 5px;
+      /* changes cursor to pointer when hovering over button */
+     cursor: pointer;
+ }
+ /* makes button grey if button is disabled */
+ button:disabled {
+     background-color: #999;
+ }
+    /* shows error messages in red */
+ .error {
+     color: red;
+     font-size: 0.8em;
+         /* Initially hide error messages */
+     display: none;
+ 
+ }
+/* shows border of field in red when it is invalid */
+ input.invalid {
+     border-color: red;
+ }
+
+
+
+ /* Default styling for hiding elements chatgpt.com */
+ .filterDiv {
+     display: none;
+ }
+
+ /* Displays only filtered elements chatgpt.com */
+ .filterDiv.show {
+     display: flex;
+ }
+
+ /* Styling for filter buttons  */
+ #myBtnContainer .btn {
+     margin-top: 5px;
+     padding: 9px 18px;
+     width: 50%;
+     background-color: hsl(203, 10%, 15%);
+     color: rgb(241, 241, 241);
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+/* styling for active filter buttons so they go navy when active*/
+ #myBtnContainer .btn.active {
+     background-color: hsl(203, 89%, 4%);
+     color: white;
+ }

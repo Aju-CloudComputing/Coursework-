@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Elite Drive - Home</title>
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Addition of custom styles-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="text-center py-4">
+        <img src="logo.png" alt="Elite Drive Logo" class="logo">
+        <!-- Logo-->
+        <p class="slogan">Elite Cars, Elite Performance</p>
+        <!-- Slogan-->
+        <nav>
+            <!-- Navigation Bar-->
+            <ul class="nav justify-content-center">
+                <!-- Options in the navigation Bar that link to a page on the website-->
+                <li class="nav-item"><a class="nav-link text-white" href="Index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="About.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="CarsAvailable.html">Cars Available</a></li>
+
+                <!-- W3schools Dropdown Drop down Menu for Services https://www.w3schools.com/howto/howto_css_dropdown.asp#:~:text=Use%20any%20element%20to%20open,dropdown%20menu%20correctly%20with%20CSS. -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="servicesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <!-- Drop down options that link to specific part about each service -->
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="Services.html#mot-check">MOT Check</a>
+                        <li><a class="dropdown-item" href="Services.html#general-services">General Services</a>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link text-white" href="NewsandEvents.html">News and Events</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="ContactInformation.html">Contact
+                        Information</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main section -->
+    <main class="container text-center">
+        <!-- Heading for Carousel-->
+        <h1>Cars That are Coming Soon!</h1>
+
+        <!-- Carousel using Bootstrap 5 that shows cars-->
+        <div id="carouselId" class="carousel slide mx-auto my-4" style="max-width: 1200px;" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="1"></button>
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="2"></button>
+                <button type="button" data-bs-target="#carouselId" data-bs-slide-to="2" aria-label=""></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- 1st Slide Iamge -->
+                <div class="carousel-item active">
+                    <img src="IndexImages/bug.PNG" class="w-100 d-block" alt="1st Slide">
+                    <div class="carousel-caption">
+                        <!-- Caption and heading for each slide -->
+                        <h2>Bugatti Tourbillon</h2>
+                        <p>The Pinnacle Of Engineering.</p>
+                    </div>
+                </div>
+                <!-- 2nd Slide Image -->
+                <div class="carousel-item">
+                    <img src="IndexImages/urus.PNG" class="w-100 d-block" alt="2nd Slide">
+                    <div class="carousel-caption">
+                        <h2>Lamborghini Urus</h2>
+                        <p>The SUV that Redefines Luxury and Speed.</p>
+                    </div>
+                </div>
+                <!-- 3rd Slide Iamge-->
+                <div class="carousel-item">
+                    <img src="IndexImages/fer.PNG" class="w-100 d-block" alt="3rd Slide">
+                    <div class="carousel-caption">
+                        <h2>Ferari Purosangue</h2>
+                        <p>Experience Pure Italian performance in SUV Form.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls for carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Embedded Video from youtube  -->
+        <h1>Tour Of Our Showroom in Belfast</h1>
+        <iframe class="mx-auto d-block" width="800" height="400" src="https://www.youtube.com/embed/YuzClM_OAO0"
+            frameborder="0" allowfullscreen></iframe>
+        <!-- Opening Times -->
+        <h1>Come Visit Us - Opening Times</h1>
+        <h3>Monday to Friday - 08:00-18:00 <br> Saturday - 09:00-16:00 <br> Sunday - 10:00-14:00 <br> <br> 62
+            BoucherRoad <br> Belfast <br> BT12 6HR <br> Northern Ireland
+        </h3>
+        <!-- Bootstrap Button opening google maps to show directions from Belfast -->
+        <a href="https://www.google.com/maps/dir/Belfast/Charles+Hurst+Aston+Martin+Belfast,+62+Boucher+Rd,+Belfast+BT12+6LR/@54.5734604,-5.989839,12z/data=!4m13!4m12!1m5!1m1!1s0x4860fffdd7d08a3b:0x2e57162cefc7c531!2m2!1d-5.93012!2d54.597285!1m5!1m1!1s0x4861089f7932c36b:0x7a85691b7b9d98fd!2m2!1d-5.9675868!2d54.5715365?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            class="badge bg-primary" target="_blank">Link to Google Maps </a>
+
+        <!-- Image showing location of dealership-->
+        <img src="IndexImages/Location.PNG" alt="Location" class="Location">
+
+
+        <footer>
+            <p>&copy; 2024 Elite Drive Website</p>
+        </footer>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+    <title>Elite Drive - Cars Available </title>
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- Addition of custom styles-->
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Elite Drive Logo" class="logo">
+        <p class="slogan">Elite Cars, Elite Performance</p>
+        <!-- Navigation Bar-->
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="Index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="About.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="CarsAvailable.html">Cars Available</a></li>
+
+                <!-- W3schools Dropdown Menu for Services -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="servicesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <!-- Drop down options that link to specific part about each service -->
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="Services.html#mot-check">MOT Check</a>
+                        <li><a class="dropdown-item" href="Services.html#general-services">General Services</a>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link text-white" href="NewsandEvents.html">News and Events</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="ContactInformation.html">Contact
+                        Information</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Filter buttons elements https://www.w3schools.com/howto/howto_js_filter_elements.asp -->
+        <div id="myBtnContainer" style="text-align: center;">
+            <button class="btn active" onclick="filterSelection('all')"> <strong>Show all</strong></button>
+            <button class="btn" onclick="filterSelection('Electric')"><strong>Electric</strong></button>
+            <button class="btn" onclick="filterSelection('Manual')"><strong>Manual</strong></button>
+            <button class="btn" onclick="filterSelection('Petrol')"><strong>Petrol</strong></button>
+        </div>
+        <br>
+        <br>
+        <!-- conatiner which filters will be applied to  -->
+        <div id="carContainer">
+            <!-- Bootstrap Grid Layout -->
+            <!-- BMW which belongs in manual class for filters -->
+            <div class="row justify-content-start align-items-center g-2 filterDiv Manual">
+                <!-- 3 images of car  -->
+                <h4>2024 BMW 1 Series 116d M Sport 1.5 5dr £26,900 </h4>
+                <div class="col">
+                    <img src="carsavail/bmw1.PNG" class="bmw" alt="bmw">
+                </div>
+                <div class="col">
+                    <img src="carsavail/bmw 2.PNG" class="bmw" alt="bmw">
+                </div>
+                <div class="col">
+                    <img src="carsavail/bmw3.PNG" class="bmw" alt="bmw">
+                </div>
+                <div class="col">
+                    <!-- details about car  -->
+                    <strong>Summary:</strong>
+                    <ul>
+                        <li>Fuel type: Diesel</li>
+                        <li>Body Type: Hatchback</li>
+                        <li>Engine: 1.5L</li>
+                        <li>Gearbox: Manual</li>
+                        <li>Doors: 5</li>
+                        <li>Seats: 5</li>
+                        <li>Manufacturer Warranty: Full</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <strong>What it comes with:</strong>
+                    <ul>
+                        <li>18" 819M Double-spoke style alloy wheels</li>
+                        <li>Sun Protection Glass</li>
+                        <li>High-Beam Assistant</li>
+                        <li>Adaptive LED Headlights</li>
+                        <li>Multifunction Controls on Steering Wheel</li>
+                        <li>Cruise Control</li>
+                        <li>Electric Folding Door Mirrors</li>
+                        <li>Bluetooth Connection</li>
+                        *Please reach out to us for list of features*
+                    </ul>
+                </div>
+                <div class="col">
+                    <strong>Performance:</strong>
+                    <ul>
+                        <li>0-62mph: 10.3s</li>
+                        <li>Top Speed: 124mph</li>
+                        <li>Engine Power: 114bhp</li>
+                        <li>Engine Torque: 199lbs/ft</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <br>
+            <!-- Bootstrap Grid Layout -->
+            <!-- Porsche which belongs in electric class for filters -->
+            <div class="row justify-content-start align-items-center g-2 filterDiv Electric">
+                <h4>2024 Porsche Taycan Performance 89kWh 4S Auto 4WD 4dr £81,900</h4>
+                <div class="col">
+                    <!-- 3 images of car  -->
+                    <img src="carsavail/por1.PNG" class="por" alt="por">
+                </div>
+                <div class="col">
+                    <img src="carsavail/por2.PNG" class="por" alt="por">
+                </div>
+                <div class="col">
+                    <img src="carsavail/por3.PNG" class="por" alt="por">
+                </div>
+                <div class="col">
+                    <!-- details about car  -->
+                    <strong>Summary:</strong>
+                    <ul>
+                        <li>Fuel type: Electric</li>
+                        <li>Body Type: Saloon</li>
+                        <li>Gearbox: Automatic</li>
+                        <li>Doors: 4</li>
+                        <li>Seats: 5</li>
+                        <li>Manufacturer Warranty: Full</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <strong>What it comes with:</strong>
+                    <ul>
+                        <li>SportDesign Sideskirts</li>
+                        <li>Brake Calipers painted in Black</li>
+                        <li>21-Inch Mission E Design Wheels</li>
+                        <li>Privacy Glass</li>
+                        <li>Model Designation painted in Black (high-gloss)</li>
+                        <li>Side Window Trims in Black (high-gloss)</li>
+                        <li>Model Designation painted in Black (high-gloss)</li>
+                        <li>Light Strip with illuminated 'PORSCHE' Logo Black</li>
+                        *Please reach out to us for list of features*
+                    </ul>
+                </div>
+                <div class="col">
+                    <strong>Performance:</strong>
+                    <ul>
+                        <li>0-62mph: 3.70s</li>
+                        <li>Top Speed: 155mph</li>
+                        <li>Engine Power: 537bhp</li>
+                        <li>Engine Torque: 513lbs/ft</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <br>
+            <!-- Bootstrap Grid Layout -->
+            <!-- Ferari which belongs in petrol class for filters -->
+            <div class="row justify-content-start align-items-center g-2 filterDiv Petrol">
+                <h4>2024 Ferrari Roma 2Dr Auto 3.8 £169,499</h4>
+                <div class="col">
+                    <!-- 3 images of car  -->
+                    <img src="carsavail/fer1.PNG" class="fer" alt="fer">
+                </div>
+                <div class="col">
+                    <img src="carsavail/fer2.PNG" class="fer" alt="fer">
+                </div>
+                <div class="col">
+                    <img src="carsavail/fer3.PNG" class="fer" alt="fer">
+                </div>
+                <div class="col">
+                    <!-- details about car  -->
+                    <strong>Summary:</strong>
+                    <ul>
+                        <li>Fuel type: Petrol</li>
+                        <li>Body Type: Coupe</li>
+                        <li>Engine: 3.8L</li>
+                        <li>Gearbox: Automatic</li>
+                        <li>Doors: 2</li>
+                        <li>Seats: 4</li>
+                        <li>Manufacturer Warranty: Full</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <strong>What it comes with:</strong>
+                    <ul>
+                        <li>Magneride Dual Mode Suspension</li>
+                        <li>Rear Parking Camera</li>
+                        <li>Bluetooth Connection</li>
+                        <li>Cruise Control</li>
+                        <li>Back Radar</li>
+                        <li>High Power Hi-Fi System</li>
+                        <li>Carbon Fibre Front Spoiler</li>
+                        <li>Giallo Modena Brake Callipers</li>
+                        *Please reach out to us for list of features*
+                    </ul>
+                </div>
+                <div class="col">
+                    <strong>Performance:</strong>
+                    <ul>
+                        <li>0-62mph: 3.4s</li>
+                        <li>Top Speed: 199mph</li>
+                        <li>Engine Power: 612bhp</li>
+                        <li>Engine Torque: 561lbs/ft</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Elite Drive Website</p>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Calling of javascript so filters can work
+        $(document).ready(function () {
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
